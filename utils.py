@@ -4,7 +4,7 @@ import requests
 def get_coordinates(address):
     api_url = "https://geocode-maps.yandex.ru/1.x/"
     params = {
-        "apikey": "ваш_api_key",
+        "apikey": "40d1649f-0493-4b70-98ba-98533de7710b",
         "format": "json",
         "geocode": address
     }
@@ -19,7 +19,7 @@ def get_coordinates(address):
 def get_district_by_coordinates(coords):
     api_url = "https://geocode-maps.yandex.ru/1.x/"
     params = {
-        "apikey": "ваш_api_key",
+        "apikey": "40d1649f-0493-4b70-98ba-98533de7710b",
         "format": "json",
         "geocode": f"{coords[0]},{coords[1]}",
         "kind": "district"
